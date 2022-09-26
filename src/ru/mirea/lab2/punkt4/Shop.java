@@ -10,14 +10,21 @@ public class Shop {
     }
 
 
-    public void deleteComputer(Computer a) {
-        int i = 0;
+    public void deleteComputer(String model) {
         for (Computer x : C) {
-            System.out.println(x);
-            if(x.model == a.model) {
+            if(x.model.equals(model)){
                 C.remove(x);
             }
         }
+    }
+    public String searchComputer(String model) {
+        String n = "Not found";
+        for (Computer x : C) {
+            if (x.model.equals(model)) {
+                n =  "Model: " + x.model + "\tProcessor: " + x.processor + "\tMemory: " + x.memory + "\tBattery: " + x.battery;
+            }
+        }
+        return n;
     }
 }
 
