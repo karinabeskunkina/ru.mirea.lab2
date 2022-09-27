@@ -2,16 +2,14 @@ package ru.mirea.lab2.punkt3;
 
 public class Circle extends Point {
 
-    double x;
-    double y;
+    Point T;
+    double r;
     public Circle(){
-        x = 0;
-        y = 0;
-    };
+        r = 0;
+    }
 
-    public Circle(double x, double y){
-        this.x = x;
-        this.y = y;
+    public Circle(double r){
+        this.r = r;
     }
 
     public double getX(){return x;}
