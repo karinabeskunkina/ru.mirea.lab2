@@ -1,7 +1,6 @@
 package ru.mirea.lab2.punkt4;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 public class Shop {
     ArrayList<Computer> C = new ArrayList<Computer>();
 
